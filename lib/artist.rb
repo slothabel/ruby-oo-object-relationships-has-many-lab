@@ -11,8 +11,8 @@ class Artist
       end
     
       def songs
-        @@songs
-       # binding.pry
+        Song.all.select {|i| i.artist == self}
+        # binding.pry
       end
     
       
