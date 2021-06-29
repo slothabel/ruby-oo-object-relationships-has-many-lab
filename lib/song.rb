@@ -8,7 +8,7 @@ class Song
       @@songs << self
     end
 
-    def songs
+    def self.all
       @@songs
     end
 
